@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+    width: 100%;
+    height: 46px;
+    background-color: #090a1a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    height: 46px;
+    padding: 0px 220px;
+
+}
+#nav > li{
+    display: inline-block;
+}
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li{
+    position: relative;
+}
+#nav li a{
+    line-height: 46px;
+    padding: 0 24px;
+    text-decoration: none;
+    display: block;
+}
+#nav > li:hover > a{
+    color: #000;
+    background-color: #00CCFF;
+}
+#project-body{
+    background-color: #090a1a;
+    padding: 7rem 11rem;
+}
+.main-title {
+    text-align: center;
+  }
+  .main-title h2 {
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .main-title h2 span {
+    color:#00CCFF;
+  }
+
+.proj-text {
+    padding: 2rem 0;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+  }
+  .projects .proj-item {
+    position: relative;
+    border-radius: 15px;
+  }
+  .projects .proj-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .projects .proj-item .hover-items {
+    width: 100%;
+    height: 100%;
+    background-color: #00CCFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+  }
+  .projects .proj-item .hover-items h3 {
+    font-size: 1.5rem;
+    color: #090a1a;
+    margin-bottom: 1.5rem;
+  }
+  .projects .proj-item .hover-items .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects .proj-item .hover-items .icons .icon {
+    background-color: #191d2b;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+  }
+  .projects .proj-item .hover-items .icons .icon i {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 1rem;
+  }
+  .projects .proj-item .hover-items .icons .icon:hover {
+    background-color: #fff;
+  }
+  .projects .proj-item .hover-items .icons .icon:hover i {
+    color: #191d2b;
+  }
+  
+  .proj-item:hover .hover-items {
+    opacity: 1;
+    transform: scale(1);
+  }

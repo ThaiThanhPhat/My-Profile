@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4{
+    color: #fff;
+  }
+
+#header{
+    width: 100%;
+    height: 46px;
+    background-color: #090a1a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    height: 46px;
+    padding: 0px 220px;
+
+}
+#nav > li{
+    display: inline-block;
+}
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li{
+    position: relative;
+}
+#nav li a{
+    line-height: 46px;
+    padding: 0 24px;
+    text-decoration: none;
+    display: block;
+}
+#nav > li:hover > a{
+    color: #000;
+    background-color: #00CCFF;
+}
+
+#about-body{
+    background-color: #090a1a;
+    padding-top: 46px;
+}
+#main-about{
+    margin: 0rem 6rem;
+}
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+  }
+  #main-about .left-about span{
+    color: #00CCFF;
+    font-weight: 700;
+    font-size: 20px;
+}
+  .about-container .right-about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  .about-container .right-about .about-item {
+    border: 1px solid #2a2e35;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  .about-container .right-about .about-item:hover {
+    cursor: default;
+    transform: translateY(-5px);
+    border: 1px solid #00CCFF;
+    box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+  }
+  .about-container .right-about .about-item .abt-text {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-container .right-about .about-item .abt-text .large-text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00CCFF;
+  }
+  .about-container .right-about .about-item .abt-text .small-text {
+    padding-left: 3rem;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #dbe1e8;
+    letter-spacing: 2px;
+  }
+
+  .about-container .left-about {
+    padding-right: 5rem;
+  }
+
+  .about-container .left-about p {
+    line-height: 2rem;
+    padding: 1rem;
+    color: #dbe1e8;
+  }
+  .about-container .left-about h4 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  
+  .about-stats {
+    padding-bottom: 4rem;
+  }
+  .about-stats .progress-bars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  .about-stats .progress-bars .progress-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-stats .progress-bars .progress-bar .prog-title {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .prog-title{
+    color: #fff;
+  }
+  .about-stats .progress-bars .progress-bar .progress-con {
+    display: flex;
+    align-items: center;
+  }
+  .about-stats .progress-bars .progress-bar .progress-con .prog-text {
+    color: #b2becd;
+  }
+  .about-stats .progress-bars .progress-bar .progress-con .progress {
+    width: 100%;
+    height: 0.45rem;
+    background-color: #454e56;
+    margin-left: 1rem;
+    position: relative;
+  }
+  .about-stats .progress-bars .progress-bar .progress-con .progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #00CCFF;
+    transition: all 0.4s ease-in-out;
+    width: 60%;
+  }
+  .about-stats .progress-bars .progress-bar .progress-con .progress .html {
+    width: 90%;
+  }
+  .about-stats .progress-bars .progress-bar .progress-con .progress .css {
+    width: 85%;
+  }
+  .about-stats .progress-bars .progress-bar .progress-con .progress .js {
+    width: 65%;
+  }
+  .about-stats .progress-bars .progress-bar .progress-con .progress .c {
+    width: 75%;
+  }
+  .about-stats .progress-bars .progress-bar .progress-con .progress .c-plus{
+    width: 75%;
+  }
+  .about-stats .progress-bars .progress-bar .progress-con .progress .java {
+    width: 70%;
+  }
+  
+  .stat-title {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 3.5rem 0;
+    position: relative;
+  }
